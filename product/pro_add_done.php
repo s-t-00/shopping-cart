@@ -44,8 +44,8 @@ if (isset($_SESSION['login']) == false) {
         $dsn = 'mysql:dbname=shop;host=localhost';
         //（dsn = DataSourceName）
         $user = 'root';
-        $priceword = '';
-        $dbh = new PDO($dsn, $user, $priceword);
+        $password = '';
+        $dbh = new PDO($dsn, $user, $password);
         //（dbh = DataBase-Handle）
         //（PDO = PHP Data Objects、PHP拡張モジュール、データベースの内容をPHPのオブジェクト(抽象物)のように扱える）
         //PDOクラス(設計図)の作成

@@ -4,13 +4,13 @@ session_start();
 session_regenerate_id(true);
 //合言葉を毎回変更
 if (isset($_SESSION['member_login']) == false) {
-    print 'ようこそゲスト様';
+    print 'ようこそゲスト様　';
     print '<a href="member_login.html">会員ログイン</a><br />';
     print '<br />';
 } else {
     print 'ようこそ';
     print $_SESSION['member_name'];
-    print '様';
+    print '様　';
     print '<a href="member_logout.php">ログアウト</a><br />';
     print '<br />';
 }

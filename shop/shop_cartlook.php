@@ -10,7 +10,7 @@ if (isset($_SESSION['member_login']) == false) {
 } else {
     print 'ようこそ';
     print $_SESSION['member_name'];
-    print '様';
+    print '様　';
     print '<a href="member_logout.php">ログアウト</a><br />';
     print '<br />';
 }
@@ -121,6 +121,12 @@ if (isset($_SESSION['member_login']) == false) {
     </form>
     <br />
     <a href="shop_form.html">ご購入手続きへ進む</a><br />
+
+    <?php
+    if (isset($_SESSION['member_login']) == true) {
+        print '<a href="shop_kantan_check.php">会員かんたん注文へ進む</a><br />';
+    }
+    ?>
 
 </body>
 
